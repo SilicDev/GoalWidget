@@ -70,8 +70,9 @@ function generateWidget() {
 }
 
 function updateWidget() {
+  	goalTotal = goalTotal.value + 1;
   	let ratio = (count/goalTotal) * 100;
     $("#bar").css('width', Math.min(100, ratio) + "%");
     $("#count").html(`${count}`);
-    $("#goalTotal").html(`{goalTotal}`);
+    $("#goalTotal").html(`${count + 1}`);
 }
