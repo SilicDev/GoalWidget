@@ -60,7 +60,7 @@ function generateWidget() {
           <div class="goal_widget goal_metadata">
             <div class="goal_widget goal_message" style="color: rgb(239, 239, 241);">{goalMessage}</div>
             <div class="goal_widget goal_contributions" style="color: rgb(239, 239, 241);">
-                <span id="count">${count}</span> / {goalTotal} {goalType}s
+                <span id="count">${count}</span> / <span id="goal">{goalTotal}</span> {goalType}s
             </div>
           </div>
         </div>
@@ -73,4 +73,5 @@ function updateWidget() {
   	let ratio = (count/goalTotal) * 100;
     $("#bar").css('width', Math.min(100, ratio) + "%");
     $("#count").html(`${count}`);
+    $("#goal").html(`${goalTotal}`);
 }
