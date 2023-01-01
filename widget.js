@@ -1,8 +1,8 @@
 let backgroundColor, progressBarColor;
 
 let count = 0,
-    goalType,
-    goalTotal = 0,
+    goalType;
+let goalTotal = 0,
     goalMessage;
 
  let image_url = "";
@@ -60,7 +60,7 @@ function generateWidget() {
           <div class="goal_widget goal_metadata">
             <div class="goal_widget goal_message" style="color: rgb(239, 239, 241);">{goalMessage}</div>
             <div class="goal_widget goal_contributions" style="color: rgb(239, 239, 241);">
-                <span id="count">${count}</span> / <span id="goal">{goalTotal}</span> {goalType}s
+                <span id="count">${count}</span> / <span id="goalTotal">{goalTotal}</span> {goalType}s
             </div>
           </div>
         </div>
