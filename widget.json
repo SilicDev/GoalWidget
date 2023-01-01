@@ -1,0 +1,49 @@
+{
+  "testCounterUp": {
+    "type": "button",
+    "label": "Test counter + 1",
+    "group": "Test"
+  },
+  "fontColor": {
+    "type": "colorpicker",
+    "label": "Font color",
+    "value": "rgb(255, 255, 255)"
+  },
+  "goalType": {
+    "type": "dropdown",
+    "label": "Goal Type",
+    "value": "Follower",
+    "options": {
+      "Follower": "Followers",
+      "Subscriber": "Subscribers"
+    }
+  },
+  "goalTotal": {
+    "type": "number",
+    "label": "Goal Total",
+    "value": 50
+  },
+  "goalMessage": {
+    "type": "text",
+    "label": "Goal Message",
+    "value": "Help me reach Affiliate!"
+  },
+  "progressBarColor": {
+    "type": "colorpicker",
+    "label": "Progress bar color",
+    "value": "rgb(0, 0, 0)"
+  },
+  "backgroundColor": {
+    "type": "colorpicker",
+    "label": "Background color",
+    "value": "rgb(143, 83, 233)"
+  },
+  "widgetName": {
+    "type": "hidden",
+    "value": "Goal Widget"
+  },
+  "widgetAuthor": {
+    "type": "hidden",
+    "value": "SilcDev"
+  }
+}
